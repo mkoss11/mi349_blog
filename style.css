@@ -1,0 +1,162 @@
+/* Basic Layout and Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0E9D1;
+    color: #363330;
+}
+
+header {
+    background-color: #50AB80;
+    color: #F0E9D1;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F0E9D1;
+}
+
+nav ul li a:hover {
+    color: #116A40;
+}
+
+/* Main Content and Sidebar */
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #116A40;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+h3 {
+    color: #116A40;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+/* Blog Post Image and Caption */
+article img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 50%;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #F0E9D1;
+    padding: 1em;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 1em auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #116A40;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.7em;
+    background-color: #116A40;
+    color: #F0E9D1;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #50AB80;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    padding: 0.8em;
+    text-align: left;
+}
+
+th {
+    background-color: #50AB80;
+    color: #F0E9D1;
+    font-weight: bold;
+}
+
+td {
+    background-color: #F0E9D1;
+}
+
+/* Flexbox Layout for a Blog Post */
+article.flex-layout {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+article.flex-layout div {
+    flex: 1 1 45%;
+}
+
+/* Newsletter Form */
+form input[type="text"] {
+    margin-right: 0.5em;
+}
+
+/* ID, Class, Attribute Selector Examples */
+#main-content {
+    padding: 2em;
+    background-color: #F0E9D1;
+}
+
+.contact-form input[required] {
+    border: 2px solid #50AB80;
+}
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #50AB80;
+    color: #F0E9D1;
+    padding: 1em;
+}
